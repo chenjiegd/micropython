@@ -140,6 +140,8 @@ its own to that.
         Set the pull state to one of three possible values: ``pin.PULL_UP``,
         ``pin.PULL_DOWN`` or ``pin.NO_PULL`` (where ``pin`` is an instance of
         a pin). See below for discussion of default pull states.
+        将引脚状态设置为三种可能的状态之一：“上拉状态”，“下拉状态”，“不设置上下拉状态”。
+        有关默认拉状态的讨论，请参见下面。
 
 
     .. py:method::get_pull()
@@ -148,6 +150,8 @@ its own to that.
         possible values: ``NO_PULL``, ``PULL_DOWN``, or ``PULL_UP``. These 
         are set using the ``set_pull()`` method or automatically configured 
         when a pin mode requires it.
+        返回引脚的拉状态，它可能是三种可能状态之一：“不拉”，“下拉”，“上拉”。
+        这些是使用set_pull()方法设置的，或者在pin模式需要时自动配置。
 
     .. py:method::get_mode()
 
@@ -157,6 +161,8 @@ its own to that.
         ``MODE_WRITE_ANALOG``, ``MODE_READ_DIGITAL``, ``MODE_WRITE_DIGITAL``, 
         ``MODE_DISPLAY``, ``MODE_BUTTON``, ``MODE_MUSIC``, ``MODE_AUDIO_PLAY``,
         ``MODE_TOUCH``, ``MODE_I2C``, ``MODE_SPI``.
+        返回pin模式。当一个引脚用于一个特定的功能，写一个数字值，或读一个模拟值，pin模式写一个数字值，或读一个模拟值，pin模式改变。
+        引脚可以有以下一种模式:
 
 
 .. py:class:: MicroBitAnalogDigitalPin
